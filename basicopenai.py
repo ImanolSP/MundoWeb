@@ -15,7 +15,7 @@ completion = client.chat.completions.create(
     {"role": "user", "content": prompt}
   ],
   max_tokens=100,
-  temperature=0
+  temperature=0,
 )
 #print(completion)
 print(completion.choices[0].message.content)
